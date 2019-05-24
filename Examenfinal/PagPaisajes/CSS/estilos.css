@@ -1,0 +1,273 @@
+/* body */
+* {
+  font-family: 'Dancing Script', cursive, helvetica;
+  background-color: #02010a;
+}
+
+.contenido {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Cabecera */
+
+header {
+  background-color: #5b7989;
+  color: white;
+  height: 5%;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius:10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  overflow: auto;
+  animation: rebote 2s;
+}
+
+@-webkit-keyframes rebote{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+h1 {
+  float: left;
+  text-shadow: 2px 2px 2px #02010a;
+  background-color: inherit;
+  margin-left: 2%;
+}
+
+ul {
+  float: right;
+  background-color: inherit;
+  margin-top: 4%;
+}
+
+header ul li a {
+  text-decoration: none;
+  background-color: inherit;
+  color: white;
+  font-size: 1.2em;
+}
+
+header ul li {
+  list-style: none;
+  display: inline;
+  background-color: inherit;
+  margin-right: 20px;
+}
+
+#linkinicio {
+  text-decoration: underline;
+}
+
+#linkretratos {
+  text-decoration: underline;
+}
+
+/*Imagen de Portada*/
+
+/* imagenes secundarias */
+
+#imagenessecundarias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #d5c75f;
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+}
+
+.columnas {
+  background-color: inherit;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.fotos {
+  width: 85%;
+  height: 45%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.linkretra {
+  background-color: inherit;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#lago1 {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+#lago2 {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%):
+}
+
+#lago3 {
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+}
+#lago4 {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%):
+}
+#lago6 {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%):
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.icono {
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+}
+
+.colfooter {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: inherit;
+
+}
+
+h3 {
+    background-color: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    background-color: inherit;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.redessociales {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.colfooter section {
+    background-color: inherit;
+}
+
+/* Sección para celulares */
+
+
+@media (max-width:900px) {
+
+.contenido {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    float: none;
+    text-align: center;
+    text-shadow: 2px 2px 2px #02010a;
+    background-color: inherit;
+    margin-left: 2%;
+  }
+
+  ul {
+    float: none;
+    text-align: center;
+    background-color: inherit;
+    margin-top: 4%;
+  }
+
+
+
+
+  #imagenessecundarias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #d5c75f;
+    border: 1px solid black;
+  }
+
+.columnas {
+  width: auto;
+  height: auto;
+}
+
+  .fotos {
+    width: 60%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: inherit;
+    box-shadow: 2px 2px 2px #02010a;
+  }
+
+#lago2 {
+    filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+  }
+
+#lago5 {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%):
+  }
+
+#lago3 {
+      filter: none;
+      -webkit-filter: none;
+    }
+
+
+#piepagina {
+  display: flex;
+  flex-direction: column;
+  color: black;
+
+}
+
+.colfooter {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: inherit;
+  margin-left: 0;
+}
+
+
+h3 {
+  text-align: left;
+}
+
+}
